@@ -1,11 +1,18 @@
 import './App.css';
+import Main from '../src/components/Main'
+import Thanks from '../src/components/Thanks'
 
 function App() {
   return (
     <div className="App">
-      <h1 className="text-3xl font-bold underline text-Tomato">
-      Hello <span className='font-[Roboto]'>world!</span>
-    </h1>
+      <div id='wrapper'>
+        <div id='mainWrapper'>
+          <Main />
+        </div>
+        <div id='thanksWrapper' className='hidden'>
+          <Thanks />
+        </div>
+      </div>
     </div>
   );
 }
