@@ -6,10 +6,10 @@ function App() {
   return (
     <div className="App">
       <div id='wrapper'>
-        <div id='mainWrapper'>
+        <div id='mainWrapper' className='hidden'>
           <Main />
         </div>
-        <div id='thanksWrapper' className='hidden'>
+        <div id='thanksWrapper' className=''>
           <Thanks />
         </div>
       </div>
