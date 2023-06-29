@@ -10,10 +10,10 @@ function Main() {
         <div id="imageWrapper" className='mb-10'>
           <Image />
         </div>
-        <div id="bodyWrapper" className='mb-10'>
+        <div id="bodyWrapper" className='mb-10 px-6'>
           <Body />
         </div>
-        <div id="formWrapper" className='mb-10'>
+        <div id="formWrapper" className='mb-10 px-6'>
           <Form />
         </div>
       </div>
