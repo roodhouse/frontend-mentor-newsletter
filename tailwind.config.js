@@ -9,10 +9,10 @@ module.exports = {
       transparent: 'transparent',
       current: 'currentColor',
       white: '#ffffff',
-      Tomato: 'hsl(4, 100%, 67%)',
-      DarkSlateGray: "hsl(234, 29%, 20%)",
-      CharcoalGray: "hsl(235, 18%, 26%)",
-      Gray: "hsl(231, 7%, 60%)"
+      tomato: 'hsl(4, 100%, 67%)',
+      darkSlateGray: "hsl(234, 29%, 20%)",
+      charcoalGray: "hsl(235, 18%, 26%)",
+      gray: "hsl(231, 7%, 60%)"
     },
     fontFamily: {
       Roboto: 'Roboto'
