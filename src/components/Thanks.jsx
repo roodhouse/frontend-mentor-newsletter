@@ -3,7 +3,8 @@ import ThanksIcon from '../components/thanks/ThanksIcon'
 import ThanksBody from '../components/thanks/ThanksBody'
 import ThanksForm from '../components/thanks/ThanksForm'
 
-function Thanks() {
+function Thanks({userEmail}) {
+  
   return (
     <>
       <div id="thanksContainer" className='pt-[149px] px-6 pb-10'>
@@ -11,7 +12,7 @@ function Thanks() {
           <ThanksIcon />
         </div>
         <div id="thanksBodyWrapper" className='mb-[263px]'>
-          <ThanksBody />
+          <ThanksBody userEmail={userEmail} />
         </div>
         <div id="thanksFormWrapper">
           <ThanksForm />

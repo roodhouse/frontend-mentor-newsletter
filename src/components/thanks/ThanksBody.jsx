@@ -1,6 +1,6 @@
 import React from 'react'
 
-function ThanksBody() {
+function ThanksBody({userEmail}) {
   return (
     <>
       <div id="thanksBodyContainer">
@@ -8,7 +8,7 @@ function ThanksBody() {
           <h1>Thanks for subscribing!</h1>
         </div>
         <div id="thanksText" className='font-Roboto text-base font-normal text-darkSlateGray leading-[150%]'>
-        <p>A confirmation email has been sent to <span id='userEmail' className='font-bold'>ash@loremcompany.com</span>. Please open it and click the button inside to confirm your subscription</p>
+        <p>A confirmation email has been sent to <span id='userEmail' className='font-bold'>{userEmail}</span>. Please open it and click the button inside to confirm your subscription</p>
         </div>
       </div>
     </>
