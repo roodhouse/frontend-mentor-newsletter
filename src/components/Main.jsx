@@ -3,7 +3,8 @@ import Image from './main/Image'
 import Body from './main/Body'
 import Form from './main/Form'
 
-function Main() {
+function Main({changeEmail}) {
+  
   return (
     <>
       <div id="mainContainer">
@@ -14,7 +15,7 @@ function Main() {
           <Body />
         </div>
         <div id="formWrapper" className='mb-10 px-6'>
-          <Form />
+          <Form changeEmail={changeEmail}/>
         </div>
       </div>
     </>
