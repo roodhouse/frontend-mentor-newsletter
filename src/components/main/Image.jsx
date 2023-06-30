@@ -5,7 +5,7 @@ function Image() {
   return (
     <>
       <div id="imageContainer">
-        <img src={Signup} alt="Signup" />
+        <img src={Signup} alt="Signup" className='w-full' />
       </div>
     </>
   )
