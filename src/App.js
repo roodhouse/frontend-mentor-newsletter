@@ -13,8 +13,8 @@ function App() {
   
   return (
     <div className="App bg-[#36384D] flex justify-center">
-      <div id='wrapper' className='max-w-[640px] bg-white'>
-        <div id='mainWrapper' className=''>
+      <div id='wrapper' className='max-w-[640px] bg-white xl:max-w-[928px] w-[928px]'>
+        <div id='mainWrapper' className='xl:h-[641px]'>
           <Main changeEmail={changeEmail} />
         </div>
         <div id='thanksWrapper' className='hidden'>
