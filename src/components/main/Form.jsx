@@ -11,8 +11,8 @@ function Form({changeEmail}) {
 
   function onSubmit(data) {
     resetField('email');
-    const main = document.getElementById('mainWrapper')
-    const thanks = document.getElementById('thanksWrapper')
+    const main = document.getElementById('wrapper')
+    const thanks = document.getElementById('thanksPrimaryWrapper')
     thanks.style.display = "block";
     main.style.display = 'none';
     changeEmail(data.email)
@@ -21,7 +21,18 @@ function Form({changeEmail}) {
   function onError(e) {
     
     let errorMessage = document.getElementById('errorMessage')
-    errorMessage.style.visibility = 'visible'
+    let emailInputContainer = document.getElementById('emailInputContainer');
+    console.log(emailInputContainer);
+    emailInputContainer.style.borderColor = '#FF6155'
+    emailInputContainer.style.color = '#FF6155'
+    emailInputContainer.firstChild.style.background = 'hsl(4, 100%, 67%, 0.1)'
+    errorMessage.style.visibility = 'visible' 
+    emailInputContainer.addEventListener('input', function(){
+      // change the style back to normal when a user begins to change the input
+      emailInputContainer.style.color = '#000';
+      emailInputContainer.firstChild.style.background = '#fff';
+      emailInputContainer.style.borderColor = 'rgba(25,24,43,0.25)'
+    })
   }
 
   return (
@@ -44,8 +55,8 @@ function Form({changeEmail}) {
                 })}
               />
             </div>
-            <div id="submitContainer" className='cursor-pointer bg-darkSlateGray text-white rounded-[8px] flex justify-center items-center py-[18px]'>
-              <input type="submit" id='submit' name='submit' value='Subscribe to monthly newsletter' />
+            <div id="submitContainer" className='cursor-pointer bg-darkSlateGray text-white rounded-[8px] flex justify-center items-center py-[18px] hover:bg-tomato hover:shadow-[0px_16px_32px_0px_rgba(255,97,85,0.50);]'>
+              <input type="submit" id='submit' name='submit' value='Subscribe to monthly newsletter' className='cursor-pointer' />
             </div>
           </form>
         </div>
