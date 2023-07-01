@@ -11,8 +11,8 @@ function Form({changeEmail}) {
 
   function onSubmit(data) {
     resetField('email');
-    const main = document.getElementById('mainWrapper')
-    const thanks = document.getElementById('thanksWrapper')
+    const main = document.getElementById('wrapper')
+    const thanks = document.getElementById('thanksPrimaryWrapper')
     thanks.style.display = "block";
     main.style.display = 'none';
     changeEmail(data.email)
