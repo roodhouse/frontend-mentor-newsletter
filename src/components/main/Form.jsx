@@ -56,7 +56,7 @@ function Form({changeEmail}) {
               />
             </div>
             <div id="submitContainer" className='cursor-pointer bg-darkSlateGray text-white rounded-[8px] flex justify-center items-center py-[18px] hover:bg-tomato hover:shadow-[0px_16px_32px_0px_rgba(255,97,85,0.50);]'>
-              <input type="submit" id='submit' name='submit' value='Subscribe to monthly newsletter' />
+              <input type="submit" id='submit' name='submit' value='Subscribe to monthly newsletter' className='cursor-pointer' />
             </div>
           </form>
         </div>
